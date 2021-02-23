@@ -1,9 +1,42 @@
+footer {
+  display: flex;
+  background-color: var(--banner-footer-background-color);
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  @media screen and (min-width: 480px) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  
+  }
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  @media screen and (min-width: 1200px){
+    display: flex;
+
+  }
+}
+
 .footer-logo {
     font-family: Raleway;
     font-weight: 700;
-    font-size: 26px;
-    line-height: 1.19;
+    font-size: 24px;
+    line-height: 1.16;
     text-decoration: none;
+
+    @media screen and (min-width: 768px){
+    
+    }
+
+    @media screen and (min-width: 1200px){
+    font-size: 26px;
+    line-height: 1.19px;
+    }
   }
 
   .footer-logoStudio {
@@ -15,7 +48,10 @@
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
+
   }
+
+  
   .footer-email {
     font-weight: 400;
     font-size: 14px;
@@ -29,16 +65,24 @@
     letter-spacing: 0.03em;
   }
 
-  footer {
-    display: flex;
-    background-color: var(--banner-footer-background-color);
-    padding-top: 60px;
-    padding-bottom: 60px;
-  }
+  
   .container.footer {
+
+    @media screen and (min-width: 1200px){
     display: flex;
   }
+}
+
+
+
   .footer-borders {
+
+    @media screen and (min-width: 768px){
+    
+
+
+
+    }
     .footer-address {
       color: var(--white-color);
       font-style: normal;
@@ -100,6 +144,8 @@
       background-color: var(--accent-color);
       border-radius: 50%;
       outline: none;
+
+      
     }
   }
 
@@ -112,7 +158,14 @@
   color: var(--white-color);
   padding-top: 9px;
   padding-bottom: 20px;
-  margin-left: 93px;
+
+
+  @media screen and (min-width: 1200px){
+    margin-left: 93px;
+  }
+  
+
+
 }
 .subscription .footer-button{
   width: 200px;
@@ -144,7 +197,11 @@
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
   background-color: transparent;
-  width: 358px;
   height: 50px;
+
+
+  @media screen and (min-width: 1200px){
+  width: 450px;
   margin-left:93px;
+}
 }

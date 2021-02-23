@@ -1,26 +1,77 @@
 .clients-section {
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+    @media screen and (min-width: 768px) {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+    @media screen and (min-width: 1200px){
     padding-top: 94px;
-    padding-bottom: 94px;}.clients-title {
+    padding-bottom: 94px;
+    }
+    }
+
+    
+.clients-title {
     font-weight: 700;
-    font-size: 36px;
+    font-size: 28px;
     line-height: 1.67;
     text-align: center;
     letter-spacing: 0.03em;
     color: var(--secondary-text-color);
+    margin-bottom: 30px;
+
+    @media screen and (min-width: 1200px){
+    font-size: 36px;
+    line-height: 1.67;
     margin-bottom: 50px;
-}
+    }
+    }
+
 .clients-company {
+    display: flex;
+    flex-wrap: wrap;
+
+    @media screen and (min-width: 1200px) {
     display: flex;
     justify-content: center;
 }
+}
+
+
 .clients-example {
     height: 90px;
-    width: 170px;
+    width: 100%;
     border-radius: 4px;
-    margin-right: 30px;
+    display: block;
+
+    @media screen and (min-width: 480px) {
+        width: 210px;
+    
+    }
+    @media screen and (min-width: 768px){
+        width: 226px;
+        margin-right:30px;
+        &:nth-child(3n+3) {
+            margin-right: 0px;
+            margin-bottom: 60px;
+        
+        }
+    @media screen and (min-width: 1200px){
+        width: 170px;
+        &:not(:last-child) {
+            margin-right: 30px;
+        }
+    
+    }
+        
+    }
+      
     border: 1px solid #AFB1B8;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
     &:hover {
     fill: var(--accent-color);
     cursor: pointer;
@@ -28,7 +79,8 @@
     border-color: var(--accent-color);
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    }
+    
+
     &:focus {
     fill: var(--accent-color);
     cursor: pointer;
@@ -37,7 +89,13 @@
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     }
+    }
 }
+
+
+
+
+
 .clients-links {
     display: flex;
     justify-content: center;
@@ -47,6 +105,7 @@
     fill: #AFB1B8;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
     &:hover {
     fill: var(--accent-color);
     cursor: pointer;
@@ -54,7 +113,8 @@
     border: none;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    }
+    
+
     &:focus {
     fill: var(--accent-color);
     cursor: pointer;
@@ -64,3 +124,5 @@
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     }
 }
+}
+    
