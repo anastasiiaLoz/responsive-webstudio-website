@@ -1,0 +1,60 @@
+.project-section {
+    padding-top: 94px;
+    border: 1px solid #ECECEC;
+}
+.projects-btn {
+    font-weight: 500;
+    font-family: Roboto;
+    font-size: 16px;
+    line-height: 1.62;
+    letter-spacing: 0.03em;
+    background-color: var(--secondary-background-color);
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    padding: 6px 22px 6px 22px;
+    border: none;
+    display: inline-block;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+    letter-spacing: 0.03em;
+    background: #F5F4FA;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #F5F4FA;
+    cursor: pointer;
+    border-radius: 4px;
+    margin-right: 8px;
+    outline: none;
+    &:focus {
+    color: var(--white-color);
+    background-color: var(--accent-color);
+    }
+    &:hover {
+    color: var(--white-color);
+    background-color: var(--accent-color);
+    }
+}
+.projects-section-name {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+    color: var(--secondary-text-color);
+    background-color: var(--white-color);
+}
+.projects-section-description {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.87;
+    letter-spacing: 0.03em;
+    color: var(--primary-text-color);
+    background-color: var(--white-color);
+}
+.projects-section-navigation {
+    display: flex;
+    justify-content: center;
+    padding-top: 94px;
+    margin-bottom: 50px;
+}

@@ -1,0 +1,117 @@
+.work-section {
+    background-color: var(--white-color);
+    padding-bottom: 94px;
+    display: none;
+
+@media screen and (min-width: 468px) {
+    display:none;
+}
+@media screen and (min-width: 768px) {
+    display:none;
+}
+
+@media screen and (min-width: 1200px) {
+    display:block;
+}
+
+
+
+
+.work-section-title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.67;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--secondary-text-color);
+}
+.team-section-title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.67;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--secondary-text-color);
+    margin-bottom: 50px;
+}
+.work-section-images {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 50px;
+    margin: 0auto;
+}
+.desktop {
+    >img {
+    display: block;
+    width: 370px;
+    height: auto;
+    }
+    position: relative;
+    overflow: hidden;
+}
+.mobile {
+    >img {
+    display: block;
+    width: 370px;
+    height: auto;
+    }
+    position: relative;
+    overflow: hidden;
+}
+.solution {
+    >img {
+    display: block;
+    width: 370px;
+    height: auto;
+    }
+    position: relative;
+    overflow: hidden;
+}
+.desktop-label {
+    position: absolute;
+    bottom: 0px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-align: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--white-color);
+    background-color: rgba(47, 48, 58, 0.8);
+    z-index: 2;
+    padding: 28px;
+    width: 370px;
+    height: 70px;
+}.mobile-label {
+    position: absolute;
+    bottom: 0px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-align: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--white-color);
+    background-color: rgba(47, 48, 58, 0.8);
+    z-index: 2;
+    padding: 28px;
+    width: 370px;
+    height: 70px;
+}
+.designer-solution-label {
+    position: absolute;
+    bottom: 0px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-align: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--white-color);
+    background-color: rgba(47, 48, 58, 0.8);
+    z-index: 2;
+    padding: 28px;
+    width: 370px;
+    height: 70px;
+}
+}

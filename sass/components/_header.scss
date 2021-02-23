@@ -1,0 +1,28 @@
+header {
+  border-bottom: 1px solid #ECECEC;
+  background-color: var(--white-color);
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  height: inherit;
+}
+.header-nav {
+  display: flex;
+  align-items: center;
+}
+.header-logo {
+  font-family: Raleway;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  text-decoration: none;
+  padding-top: 24px;
+  padding-bottom: 25px;
+  margin-right: 93px;
+  background-color: var(--white-color);
+}
+.header-logoStudio {
+  color: var(--secondary-text-color);
+}

@@ -1,0 +1,59 @@
+:root {
+  --primary-text-color: #757575;
+  --secondary-text-color: #212121;
+  --white-color: #ffffff;
+  --accent-color: #2196f3;
+  --primary-background-color: #e5e5e5;
+  --secondary-background-color: #f5f4fa;
+  --banner-footer-background-color: #2f303a;
+  --banner-text-color: rgba(255, 255, 255, 0.6);
+}
+
+ul {
+
+padding: 0;
+margin: 0;
+list-style-type: none;
+}
+
+@each $title in h1, h2, h3, p {
+.#{$title} {
+    margin: 0;
+}
+}
+
+*, *::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+    font-family: "Raleway", sans-serif;
+    font-family: "Roboto", sans-serif;
+    background-color: var(--white-color);
+    color: var(--primary-text-color);
+    margin: 0;
+  }
+
+
+  .container {
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
+
+    
+    @media screen and (min-width: 480px) {
+      width: 480px;
+
+      }
+
+    @media screen and (min-width: 768px) {
+      width: 768px;
+    }
+        
+
+        @media screen and (min-width: 1200px) {
+          width: 1200px;
+        }
+      }

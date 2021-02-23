@@ -1,0 +1,120 @@
+.specials-section {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background-color: var(--white-color);
+
+@media screen and (min-width: 1200px){
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+
+.specials-section-title {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--secondary-text-color);
+    text-align: center;
+    margin-bottom: 10px;
+
+    @media screen and (min-width: 768px) {
+        text-align: left;
+    }
+}
+
+.specials-image {
+    width: 100%;
+    color: var(--primary-text-color);
+    &::before {
+    display: block;
+    height: 120px;
+    border-radius: 4px;
+    background: #F5F4FA;
+    background-repeat: no-repeat;
+    background-position: center;
+    }
+    @media screen and (min-width: 468px){
+        width: 450px; 
+        
+    }
+
+    @media screen and (min-width: 768px) {
+        width: 354px;
+        margin-bottom: unset;
+        margin-top: 60px;
+        &:nth-child(2n+1) {
+            margin-right: 30px;
+        }
+        }
+
+
+    @media screen and (min-width: 1200px) {
+        width: 270px;
+    }
+}
+
+
+
+
+.icon-antenna {
+    &::before {
+    content: "";
+    background-image: url(../images/svg.images/antenna.svg);
+    }
+}
+.icon-clock {
+    &::before {
+        content: "";
+    background-image: url(../images/svg.images/clock.svg);
+    }
+}
+.icon-diagram {
+    &::before {
+        content: "";
+    background-image: url(../images/svg.images/diagram.svg);
+    }
+}
+.icon-astronaut {
+    &::before {
+        content: "";
+    background-image: url(../images/svg.images/astronaut.svg);
+    }
+}
+.specials-box {
+    align-items: center;
+    width:100%;
+
+    &:not(:last-child) {
+        margin-bottom: 30px;
+    }
+
+
+    @media screen and (min-width: 768px) {
+        
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        }
+   
+    @media screen and (min-width: 1200px) {
+        
+        display: flex;
+        align-items: center;
+        li {
+        &:not(:last-child) {
+            margin-right: 30px;
+    }
+}
+}
+
+
+.specials-section-text {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+}
+}
+}

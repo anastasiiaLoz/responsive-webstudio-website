@@ -1,0 +1,58 @@
+.auth-nav {
+    a {
+    color: var(--primary-text-color);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    text-decoration: none;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+    margin-left: auto;
+    .mail-link {
+    margin-right: 30px;
+    }
+}
+.mail-link {
+    margin-left: 10px;
+}
+.phone-link {
+    margin-left: 10px;
+}
+.auth-nav-envelope {
+    a {
+    &:hover {
+        color: var(--accent-color);
+        fill: var(--accent-color);
+    }
+    &:focus {
+        color: var(--accent-color);
+        cursor: pointer;
+        fill: var(--accent-color);
+        outline: none;
+    }
+    }
+    svg {
+    margin-right: 10px;
+    }
+}
+.auth-nav-smartphone {
+    a {
+    &:hover {
+        color: var(--accent-color);
+        fill: var(--accent-color);
+    }
+    &:focus {
+        color: var(--accent-color);
+        cursor: pointer;
+        fill: var(--accent-color);
+        outline: none;
+    }
+    }
+    svg {
+    margin-right: 10px;
+    }
+}
