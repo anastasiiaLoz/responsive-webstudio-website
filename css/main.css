@@ -730,26 +730,6 @@ header {
   clip: rect(0 0 0 0);
 }
 
-.modal-button {
-  display: block;
-  margin: 0;
-  padding: 0;
-  border: none;
-  background-color: transparent;
-}
-
-.modal-button .modal-cross {
-  display: none;
-}
-
-.modal-button.is-open .modal-cross {
-  display: block;
-}
-
-.modal-button.is-open .burger-icon {
-  display: none;
-}
-
 .burger-menu + .modal-burger-menu {
   position: fixed;
   width: 100%;
@@ -762,32 +742,31 @@ header {
   left: 0;
   margin: 0;
   background-color: var(--white-color);
-  z-index: 2;
-}
-
-@media screen and (min-width: 768px) {
-  .burger-menu + .modal-burger-menu {
-    display: none;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .burger-menu + .modal-burger-menu {
-    display: none;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .burger-menu + .modal-burger-menu {
-    max-width: 1200px;
-    margin: 0 auto;
-    display: none;
-  }
 }
 
 .burger-menu + .modal-burger-menu .burger-bottom {
   bottom: 150px;
   position: absolute;
+}
+
+@media screen and (min-width: 768px) {
+  .burger-menu + .modal-burger-menu .burger-bottom {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .burger-menu + .modal-burger-menu .burger-bottom {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .burger-menu + .modal-burger-menu .burger-bottom {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: none;
+  }
 }
 
 .burger-menu.is-hidden {
@@ -2133,7 +2112,7 @@ footer {
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.projects-btn.current + .projects-btn {
+.projects-btn.current {
   margin-right: 8px;
   margin-bottom: 15px;
 }
@@ -2143,7 +2122,7 @@ footer {
     max-width: 100%;
     height: auto;
     display: block;
-    width: 450px;
+    width: 70;
   }
 }
 
@@ -2157,6 +2136,17 @@ footer {
 @media screen and (min-width: 1200px) {
   .projects-overlay {
     width: 354px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .projects-section-navigation {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 

@@ -11,6 +11,8 @@
     margin-right: -30px;
     padding-bottom: 94px;
     flex-basis: calc(100%/9 - 30px);
+
+    
 }
 .projects-works {
     
@@ -91,7 +93,7 @@ box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1p
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.projects-btn.current + .projects-btn {
+.projects-btn.current {
     margin-right: 8px;
     margin-bottom: 15px;
 }
@@ -99,10 +101,10 @@ box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1p
 
 .projects-overlay {
     @media screen and (min-width: 480px){
-        max-width: 100%;
+    max-width: 100%;
     height: auto;
     display: block;
-    width: 450px;
+    width: 70;
     }
 
     @media screen and (min-width: 768px){
@@ -111,12 +113,17 @@ box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1p
     }
     
     @media screen and (min-width: 1200px) {
-        
         width: 354px;
     }
 }
 
+.projects-section-navigation {
+    @media screen and (min-width: 768px) {
+        display: flex;
+        justify-content: center;
 
+    }
+}
 
 
 
