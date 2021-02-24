@@ -35,8 +35,12 @@
                             </svg>+38 096 111 11 11</a>
                             </a>
                         </li>
-                        
                     </ul>
+                    <button class="modal-burger-menu" data-modal-open-burger>
+                        <svg class="burger-icon" width="40" height="40">
+                            <use href="./testSprite.svg#burger-menu"></use>
+                        </svg>
+                    </button>
                 </nav>
             </div>
         </header> 
@@ -53,9 +57,9 @@
 
         <!-- -------МОДАЛЬНОЕ ОКНО -->
 
-            <class class="backdrop is-hidden" data-modal>
+            <class class="backdrop is-hidden" data-modal-burger>
                 <div class="modal">
-                    <button class="modal-form_cross-icon" data-modal-close>
+                    <button class="modal-form_cross-icon" data-modal-close-burger>
                         <svg whidth="11px" height="11px">
                             <use href=./testSprite.svg#cross-svg></use>
                         </svg>
@@ -108,12 +112,12 @@
 
         <!-- ---------МОДАЛЬНОЕ ОКНО - МЕНЮ-БУРГЕР--------  -->
 
-        <div class="burger-menu is-hidden" data-modal-burger-menu></div>
-            <div class="modal"></div>
-            <div class="test2">
-                <button class="modal-menu-close" data-modal-burger-menu-close> 
-                    <svg class="cross-svg">
-                        <use href="./testSprite.svg#cross-svg"></use>
+        <div class="burger-menu is-hidden" data-modal>
+            <div class="modal-burger">
+            <div class="burger-top">
+                <button type="button" class="modal-button is-open" data-modal-close>
+                    <svg class="modal-burger-icons" width="40" height ="40">  
+                        <use class="modal-cross" href="./testSprite.svg#cross-svg"></use>
                     </svg>
                 </button>
                 <ul class="nav_menu">
@@ -128,14 +132,14 @@
                     </li>
                 </ul>
             </div>
-            <div class="test">
-                <ul class="auth_menu">
+            <div class="burger-bottom">
+                <ul class="auth_burger-menu">
                     <li class="phone">+38 096 111 11 11</li>
                     <li class="mail">info@devstudio.com</li>
                 </ul>
                 <ul class="social_media">
-                    <li class="">
-                        <a href="" class="social_link_page">Instagram</a>
+                    <li class="social_media-site">
+                        <a href="" class="social_media_link">Instagram</a>
                     </li>
                     <li class="social_media-site">
                         <a href="" class="social_media-link">Twitter</a>
@@ -148,6 +152,8 @@
                     </li>
                 </ul>
             </div>
+        </div>
+    </div>
 
 
 
@@ -524,6 +530,7 @@
         </footer> 
     </main>
     <script src="./js/modal.js"></script>
+    <script src="./js/burger.js"></script>
     </body>
 </html>
     

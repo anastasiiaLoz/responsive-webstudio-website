@@ -90,3 +90,33 @@ box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1p
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
+
+.projects-btn.current + .projects-btn {
+    margin-right: 8px;
+    margin-bottom: 15px;
+}
+
+
+.projects-overlay {
+    @media screen and (min-width: 480px){
+        max-width: 100%;
+    height: auto;
+    display: block;
+    width: 450px;
+    }
+
+    @media screen and (min-width: 768px){
+    width: 354px;
+    display: list-item;
+    }
+    
+    @media screen and (min-width: 1200px) {
+        
+        width: 354px;
+    }
+}
+
+
+
+
+
