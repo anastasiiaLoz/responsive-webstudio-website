@@ -13,7 +13,7 @@
     flex-basis: calc(100%/9 - 30px);
 }
 .projects-works {
-    margin-right: 30px;
+    
     margin-bottom: 30px;
     border: 1px solid #EEEEEE;
     transition-duration: 250ms;
@@ -27,7 +27,17 @@
     &:nth-child(9) {
     margin-right: 0px;
     }
+
+    @media screen and (min-width: 768px) {
+        margin-right: 30px;
+    }
+    @media screen and (min-width: 1200px) {
+        margin-right: 30px;
+    }
 }
+
+
+
 .projects-title {
     padding: 20px;
     background-color: var(--white-color);
@@ -51,7 +61,9 @@ box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1p
 .overlay-text {
         transform: translatey(-100%);
 }
-    }}.projects-overlay {
+    }
+}
+    .projects-overlay {
     position: relative;
     margin-left: auto;
     width: 100%;

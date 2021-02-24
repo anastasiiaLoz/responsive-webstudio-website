@@ -4,13 +4,7 @@ footer {
   padding-top: 60px;
   padding-bottom: 60px;
 
-  @media screen and (min-width: 480px) {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-  
-  }
+
   @media screen and (min-width: 768px) {
     display: flex;
     flex-wrap: wrap;
@@ -18,9 +12,9 @@ footer {
 
   @media screen and (min-width: 1200px){
     display: flex;
-
   }
-}
+  }
+
 
 .footer-logo {
     font-family: Raleway;
@@ -29,15 +23,13 @@ footer {
     line-height: 1.16;
     text-decoration: none;
 
-    @media screen and (min-width: 768px){
-    
-    }
-
     @media screen and (min-width: 1200px){
     font-size: 26px;
     line-height: 1.19px;
     }
   }
+
+
 
   .footer-logoStudio {
     color: var(--white-color);
@@ -51,13 +43,14 @@ footer {
 
   }
 
-  
+
   .footer-email {
     font-weight: 400;
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
   }
+
   .footer {
     font-weight: 400;
     font-size: 14px;
@@ -65,8 +58,15 @@ footer {
     letter-spacing: 0.03em;
   }
 
-  
+
   .container.footer {
+
+    @media screen and (min-width: 480px) {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      text-align: center;
+    }
 
     @media screen and (min-width: 1200px){
     display: flex;
@@ -77,13 +77,16 @@ footer {
 
   .footer-borders {
 
-    @media screen and (min-width: 768px){
+    @media screen and (min-width: 480px){
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      text-align: center;
     
-
-
-
     }
-    .footer-address {
+}
+    
+  .footer-address {
       color: var(--white-color);
       font-style: normal;
       margin-top: 20px;
@@ -98,19 +101,42 @@ footer {
       display: block;
       text-decoration: none;
       color: var(--banner-text-color);
-      margin-top: 9px;
+      margin-top: 8px;
+
+      @media screen and (min-width: 1200px){
+        margin-top: 9px;
+      }
     }
-  }
-  .footer-info {
-    b {
+  
+  .footer-info .join {
+
       font-weight: 700;
       color: var(--white-color);
       font-size: 14px;
       line-height: 16px;
       letter-spacing: 0.03em;
-    }
-    margin-left: 70px;
+      margin-top: 60px;
+
+      @media screen and (min-width: 768px){
+        margin-top: 0px;
+      }
+
+      @media screen and (min-width: 1200px){
+        margin-left: 70px;
+      }
   }
+
+
+  .footer-social {
+    @media screen and (min-width: 480px){
+      display: flex;
+      justify-content: center;
+      text-align: center;
+    }
+  }
+
+
+
   .footer-social {
     display: flex;
     align-items: baseline;
@@ -144,8 +170,6 @@ footer {
       background-color: var(--accent-color);
       border-radius: 50%;
       outline: none;
-
-      
     }
   }
 
@@ -163,10 +187,17 @@ footer {
   @media screen and (min-width: 1200px){
     margin-left: 93px;
   }
-  
-
-
 }
+
+.footer-subscription {
+  @media screen and (min-width: 480px){
+    display: flex;
+      flex-direction: column;
+      justify-content: center;
+      text-align: center;
+  }
+}
+
 .subscription .footer-button{
   width: 200px;
   height: 50px;
@@ -198,10 +229,11 @@ footer {
   border-radius: 4px;
   background-color: transparent;
   height: 50px;
-
+  width: 450px;
 
   @media screen and (min-width: 1200px){
-  width: 450px;
+  width: 358px;
   margin-left:93px;
 }
 }
+

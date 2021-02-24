@@ -140,6 +140,16 @@
         outline: none;
     }
 }
-    
-    
 }
+
+.team-card >img {
+    max-width: 100%;
+    height:auto;
+    display: block;
+    width:450px;
+
+    @media screen and (min-width: 768px){
+        width: 354px;
+    }
+}
+    
