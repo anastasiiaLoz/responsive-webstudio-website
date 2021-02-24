@@ -7,26 +7,26 @@ header {
 @media screen and (min-width: 768px) {
   height: 80px;
 }
+}
 
-.header {
+header {
   display: flex;
-
 
 @media screen and (min-width: 480px) {
   display: flex;
   align-items: center;
-  height: inherit;
+  
 }
 
 @media screen and (min-width: 768px){
   display: flex;
-  align-items: center;
-  height: inherit;
+  margin-left: auto;
+  
 }
 @media screen and (min-width: 1200px)  {
   display: flex;
+  margin-left: auto;
   align-items: center;
-  height: inherit;
 }
 }
 
@@ -45,6 +45,10 @@ header {
   padding-bottom: 16px;
   margin-right: 284px;
   background-color: var(--white-color);
+
+  @media screen and (min-width: 768px) {
+    margin-right: 0px;
+  }
 }
 .header-logoStudio {
   color: var(--secondary-text-color);
@@ -55,12 +59,12 @@ header {
   margin-right: 88px;
 }
 
- @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1200px) {
   font-size: 26px;
   line-height: 1.19;
   padding-top: 24px;
   padding-bottom: 25px;
   margin-right: 93px;
- }
+  }
 }
-}
+

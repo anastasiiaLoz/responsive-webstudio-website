@@ -10,33 +10,30 @@
         transition-duration: 250ms;
         transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
         
-        display: block;
+        display: flex;
+        flex-direction: column;
         justify-content: center;
         margin-left: auto;
-        .mail-link {
-        margin-right: 15px;
+    
+        @media screen and (min-width: 1200px) {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            margin-left: auto;
+            align-items: center;
+            font-size: 14px;
+            line-height: 1.14;
+            transition-duration: 250ms;
+            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
         }
     }
-        @media screen and (min-width: 1200px) {
-        display: flex;
-        align-items: baseline;
-        justify-content: center;
-        margin-left: auto;
-        font-size: 14px;
-        line-height: 1.14;
-        transition-duration: 250ms;
-        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-        }
-        .mail-link {
-        margin-right: 30px;
-        }
-        }
+}
     
-
 
 @media screen and (min-width: 1200px){
     .mail-link {
         margin-left: 10px;
+        
     }
     .phone-link {
         margin-left: 10px;
@@ -44,8 +41,8 @@
 
 }
 
-.auth-nav-envelope {
-    a {
+.auth-nav-envelope .mail-link {
+
     &:hover {
         color: var(--accent-color);
         fill: var(--accent-color);
@@ -56,23 +53,20 @@
         fill: var(--accent-color);
         outline: none;
     }
-    }
+
     @media screen and (min-width: 768px) {
-        svg {
-            &:not(:last-child) {
-            padding-bottom: 10px;
+        &:not(:last-child) {
+            margin-bottom: 10px;
             }
-        }
     }
 
     @media screen and (min-width: 1200px){
-    svg {
-    margin-right: 10px;
+        margin-right: 10px;
     }
 }
-}
-.auth-nav-smartphone {
-    a {
+
+.auth-nav-smartphone .phone-link{
+    
     @media screen and (min-width: 768px){
     
         &:hover {
@@ -85,12 +79,23 @@
         fill: var(--accent-color);
         outline: none;
     }
+    }
     @media screen and (min-width: 1200px){
-    svg {
-    margin-right: 10px;
+        svg {
+        margin-right: 10px;
+        } 
+
+        &:hover {
+            color: var(--accent-color);
+            fill: var(--accent-color);
+        }
+        &:focus {
+            color: var(--accent-color);
+            cursor: pointer;
+            fill: var(--accent-color);
+            outline: none;
     }
 }
-    }
-}
-}
+
+
     

@@ -50,6 +50,12 @@
 .form-field {
 	margin-bottom: 10px;
 }
+
+.visually-hidden.check {
+	display:none;
+}
+
+
 .comment {
 	resize: none;
 }
@@ -197,7 +203,7 @@ textarea {
 			.form-agreement {
 				&::before {
 					content: "";
-					background-image: url(../utils/_images.scss/icon-check.svg);
+					background-image: url(../images/svg.images/icon-check.svg);
 					border: none;
 					background-size: cover;
 				}
@@ -206,16 +212,15 @@ textarea {
 	}
 }
 .button-submit {
-	position: absolute;
-	top: 100%;
-	left:30%;
-	width: 100%;
+	display: block;
+	width: 200px;
 	height: 50px;
 	background-color: var(--accent-color);
 	border-radius: 4px;
 	color: var(--white-color);
 	border-color: transparent;
 	margin-top: 20px;
+	margin-left: 80px;
 	&:hover {
 		transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 		cursor: pointer;

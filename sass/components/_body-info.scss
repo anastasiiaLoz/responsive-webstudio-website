@@ -33,27 +33,32 @@ body {
     background-color: var(--white-color);
     color: var(--primary-text-color);
     margin: 0;
-  }
+}
 
 
-  .container {
+.container {
     width: 100%;
+    min-height: inherit;
     padding-left: 15px;
     padding-right: 15px;
     margin: 0 auto;
 
-    
-    @media screen and (min-width: 480px) {
-      width: 480px;
+  @media screen and (min-width: 480px) {
+      max-width: 450px;
+      padding-left: 15px;
+      padding-right: 15px;
+      margin: 0 auto;
+  }
 
-      }
-
-    @media screen and (min-width: 768px) {
-      width: 768px;
-    }
+  @media screen and (min-width: 768px) {
+      max-width: 768px;
+      padding-left: 15px;
+      padding-right: 15px;
+      margin: 0 auto;
+  }
         
-
-        @media screen and (min-width: 1200px) {
-          width: 1200px;
-        }
-      }
+  @media screen and (min-width: 1200px) {
+          max-width: 1200px;
+          margin: 0 auto;
+  }
+}
