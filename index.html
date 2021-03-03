@@ -25,7 +25,8 @@
                     </ul>
                     <ul class="auth-nav">
                         <li class="auth-nav-envelope">
-                            <a href="mailto:info@devstudio.com" class="mail-link"><svg class="envelope" width="16px" height="12px"> 
+                            <a href="mailto:info@devstudio.com" class="mail-link">
+                                <svg class="envelope" width="16px" height="12px"> 
                                 <use href="./testSprite.svg#envelope"> </use>
                             </svg> info@devstudio.com</a>
                         </li>
@@ -36,7 +37,7 @@
                             </a>
                         </li>
                     </ul>
-                    <button class="modal-burger-menu" data-modal-open-burger>
+                    <button class="modal-burger-menu" data-modal-burger-open="">
                         <svg class="burger-icon" width="40" height="40">
                             <use href="./testSprite.svg#burger-menu"></use>
                         </svg>
@@ -50,16 +51,16 @@
         <section class="banner">
             <div class="container">
             <h1 class="banner-text">Эффективные решения<br />для вашего бизнеса</h1>
-            <button data-modal-open type="button" class="banner-button">Заказать услугу</button>
+            <button type="button" class="banner-button" data-modal-open="">Заказать услугу</button>
             </div>
         </section> 
             
 
         <!-- -------МОДАЛЬНОЕ ОКНО -->
 
-            <class class="backdrop is-hidden" data-modal-burger>
+            <class class="backdrop is-hidden" data-modal="">
                 <div class="modal">
-                    <button class="modal-form_cross-icon" data-modal-close-burger>
+                    <button class="modal-form_cross-icon" data-modal-close="">
                         <svg whidth="11px" height="11px">
                             <use href=./testSprite.svg#cross-svg></use>
                         </svg>
@@ -112,10 +113,10 @@
 
         <!-- ---------МОДАЛЬНОЕ ОКНО - МЕНЮ-БУРГЕР--------  -->
 
-        <div class="burger-menu is-hidden" data-modal>
+        <div class="burger-menu is-hidden" data-modal-burger="">
             <div class="modal-burger">
             <div class="burger-top">
-                <button type="button" class="modal-button is-open" data-modal-close>
+                <button type="button" class="modal-button is-open" data-modal-burger-close="">
                     <svg class="modal-burger-icons" width="40" height ="40">  
                         <use class="modal-cross" href="./testSprite.svg#cross-svg"></use>
                     </svg>
@@ -530,7 +531,6 @@
         </footer> 
     </main>
     <script src="./js/modal.js"></script>
-    <script src="./js/burger.js"></script>
     </body>
 </html>
     

@@ -13,7 +13,7 @@
     padding-bottom: 200px;
     height: 600px;
     max-width: 1600px;
-    // background-repeat: no-repeat;
+
 }
 
 
@@ -25,7 +25,8 @@
     letter-spacing: 0.06em;
     text-transform: uppercase;
     color: var(--white-color);
-    margin: 0 auto 30px;}
+    margin: 0 auto 30px;
+}
 
     @media screen and (min-width: 1200px){
     font-size: 44px;

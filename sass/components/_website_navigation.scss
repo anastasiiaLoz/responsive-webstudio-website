@@ -4,6 +4,7 @@
 
     @media screen and (min-width: 768px){
     color: var(--secondary-text-color);
+
     display:flex;
     font-weight: 500;
     font-size: 14px;
@@ -12,13 +13,20 @@
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     }
+    @media screen and (min-width: 1200px) {
+        display: flex;
+        color:var(--secondary-text-color);
     }
+}
+
 
 .site-nav .list> link {
     display: none;
 
     @media screen and (min-width: 768px){
-
+        position:relative;
+        text-decoration: none;
+        color:var(--secondary-text-color);
         &:hover {
             color: var(--accent-color);
         }
@@ -33,25 +41,36 @@
 
         @media screen and (min-width: 768px){
             color: var(--accent-color);
-        &:after {
-        content: "";
-        position: relative;
-        display: flex;
-        left: 0px;
-        top: 31px;
-        display: block;
-        width: 100%;
-        height: 4px;
-        border-radius: 2px;
-        background-color: var(--accent-color);
-
-        display: flex;
-        li {
-        &:not(:last-child) {
-            margin-right: 50px;
-        }
+            display: flex;
+       
+            &:after {
+            content: "";
+            position: absolute;
+            top:77px;
+            display: flex;
+            width: 3.5%;
+            height: 4px;
+            border-radius: 2px;
+            background-color: var(--accent-color);
+            
         }
         }
     }
-}
+
+    .site-nav.list>link{
+        &:after{
+            content: "";
+            width: 4.5%;
+        }
+    }
+
+    .site-nav.list> li {
+        text-decoration: none;
+
+    &:not(:last-child) {
+            margin-right: 50px;
+        }
+    }
+        
+
 
