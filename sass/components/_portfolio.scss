@@ -1,8 +1,13 @@
 .project-section {
+    padding-top: 60px;
+    padding-bottom: 60px;
+        
+    @media screen and (min-width: 1200px){
     padding-top: 94px;
     border: 1px solid #ECECEC;
-    
+    }
 }
+
 .projects-btn {
     font-weight: 500;
     font-family: Roboto;
@@ -58,8 +63,7 @@
 .projects-section-navigation {
     display: flex;
     flex-wrap: wrap;
-    padding-top: 60px;
-    margin-bottom: 50px;
+    flex-direction: row;
     
     
 

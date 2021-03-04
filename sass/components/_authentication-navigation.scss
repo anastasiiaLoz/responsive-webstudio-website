@@ -76,21 +76,26 @@
 }
 
 .auth-nav-smartphone .phone-link{
+    text-decoration: none;
+}
+
+.auth-nav-smartphone .phone-link{
     @media screen and (min-width: 768px){
-        text-decoration: none;
         font-family: Roboto;
-        color: var(--primary-text-color);;
+        color: var(--primary-text-color);
         fill: var(--primary-text-color);
         font-weight: 500;
         font-size: 12px;
         line-height: 16px;
         letter-spacing: 0.02em;
+        text-decoration: none;
     }
     @media screen and (min-width: 1200px){
-        text-decoration: none;
     margin-right: 10px;
-    color: var(--primary-text-color);;
+    text-decoration: none;
+    color: var(--primary-text-color);
     fill: var(--primary-text-color);
+    
     }
     &:hover {
         color: var(--accent-color);

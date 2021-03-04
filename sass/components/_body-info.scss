@@ -22,6 +22,10 @@ list-style-type: none;
 }
 }
 
+a {
+  text-decoration: none;
+}
+
 *, *::before,
 *::after {
   box-sizing: border-box;
