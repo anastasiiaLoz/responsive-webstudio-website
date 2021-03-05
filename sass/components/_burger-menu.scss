@@ -10,6 +10,7 @@
     left: 0;
     margin: 0;
     background-color: var(--white-color);
+    z-index:100;
     
     @media screen and (min-width: 768px) {
         display: none;
@@ -24,7 +25,7 @@
           display: none;
         }
   }
-// }
+
 
 .modal-burger-menu {
   @media screen and (min-width: 768px) {
@@ -78,10 +79,7 @@
     font-size: 24px;
     line-height: 1.16;
     letter-spacing: 0.02em;
-    color: #757575;
-    position: absolute;
-    bottom: 150px;
-          
+    color: #757575;   
         .phone {
           font-size: 34px;
           margin-bottom: 32px;
@@ -147,8 +145,7 @@
             border-right: 1px solid rgba(33, 33, 33, 0.2);;
           }
       }
-    
-      .burger-bottom{
-          bottom: 150px;
-          position: absolute;
-      }
+.burger-bottom{
+  position: absolute;
+  bottom: 95px;
+}

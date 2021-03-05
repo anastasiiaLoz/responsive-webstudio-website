@@ -5,73 +5,66 @@
 
     @media screen and (min-width: 768px){
     color: var(--secondary-text-color);
-
     display:flex;
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
     text-decoration: none;
+    padding-top: 32px;
+    padding-bottom: 32px;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover {
+        color: var(--accent-color);
+    }
+    &:focus {
+        color: var(--accent-color);
+        outline: none;
+        
+    }
     }
     @media screen and (min-width: 1200px) {
         display: flex;
         color:var(--secondary-text-color);
     }
-}}
+}
+}
 
-
-.site-nav.list> a {
-    display: none;
-    text-decoration: none;
-
+.site-nav.list {
     @media screen and (min-width: 768px){
-        position:relative;
-        text-decoration: none;
-        color:var(--secondary-text-color);
-        &:hover {
-            color: var(--accent-color);
+        display: flex;
         }
-        &:focus {
-            color: var(--accent-color);
-        }
+}
+
+.site-nav.list>li{
+    @media screen and (min-width: 768px){
+    &:not(:last-child){
+        margin-right: 50px;
     }
-    
-    
+}
+
+
     .link.current {
         display: none;
 
         @media screen and (min-width: 768px){
             color: var(--accent-color);
             display: flex;
-       
+            position:relative
+        }
             &:after {
-            content: "";
-            position: relative;
-            top:77px;
-            display: flex;
-            width: 3.5%;
-            height: 4px;
-            border-radius: 2px;
-            background-color: var(--accent-color);
+        content: "";
+        position: absolute;
+        left: 0px;
+        top: 76px;
+        display: block;
+        width: 100%;
+        height: 4px;
+        border-radius: 2px;
+        background-color: var(--accent-color);
             }
-    }
-
-    .site-nav.list>link{
-        &:after{
-            content: "";
-            width: 4.5%;
         }
     }
 
-    .site-nav.list> li {
-        text-decoration: none;
-
-    &:not(:last-child) {
-            margin-right: 50px;
-        }
-    }
-}
-}     
 
 

@@ -35,18 +35,69 @@
                         </a>
                     </li>
                 </ul>
-                    <button class="modal-burger-menu" data-modal-open-burger>
-                        <svg class="burger-icon" width="40" height="40">
-                            <use href="./testSprite.svg#burger-menu"></use>
-                        </svg>
-                    </button>
+                <button class="modal-burger-menu" data-modal-burger-open="">
+                    <svg class="burger-icon" width="40" height="40">
+                        <use href="./testSprite.svg#burger-menu"></use>
+                    </svg>
+                </button>
             </nav>
         </div>
     </header>  
         
+
+
+
+    <!-- ---------МОДАЛЬНОЕ ОКНО - МЕНЮ-БУРГЕР--------  -->
+
+    <div class="burger-menu is-hidden" data-modal-burger="">
+        <div class="modal-burger">
+        <div class="burger-top">
+            <button type="button" class="modal-button is-open" data-modal-burger-close="">
+                <svg class="modal-burger-icons" width="40" height ="40">  
+                    <use class="modal-cross" href="./testSprite.svg#cross-svg"></use>
+                </svg>
+            </button>
+            <ul class="nav_menu">
+                <li class="nav_menu-item">
+                    <a href="./index.html" class="nav_menu-link">Студия</a>
+                </li>
+                <li class="nav_menu-item">
+                    <a href="./portfolio.html" class="nav_menu-link">Портфолио</a>
+                </li>
+                <li class="nav_menu-item">
+                    <a href="#" class="nav_menu-link">Контакты</a>
+                </li>
+            </ul>
+        </div>
+        <div class="burger-bottom">
+            <ul class="auth_burger-menu">
+                <li class="phone">+38 096 111 11 11</li>
+                <li class="mail">info@devstudio.com</li>
+            </ul>
+            <ul class="social_media">
+                <li class="social_media-site">
+                    <a href="" class="social_media_link">Instagram</a>
+                </li>
+                <li class="social_media-site">
+                    <a href="" class="social_media-link">Twitter</a>
+                </li>
+                <li class="social_media-site">
+                    <a href="" class="social_media-link">Facebook</a>
+                </li>
+                <li class="social_media-site">
+                    <a href="" class="social_media-link">LinkedIn</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+
+
     <main>
         <!-- Projects Section-->
-        <section class="projects-section">
+        <div class="container">
+            <section class="projects-section">                    
                 <ul class="projects-section-navigation">
                     <li>
                         <button type="button" class="projects-btn current"> Все </button>
@@ -64,8 +115,8 @@
                         <button type="button" class="projects-btn"> Маркетинг </button>
                     </li>
                 </ul>
-            </div>
-            <div class="container"> 
+                
+                <!-- <div class="container">  -->
                 <ul class="projects-blocks">
                     <li  class="projects-works">
                         <a class="projects-works-link" href="">
@@ -102,7 +153,7 @@
                                         </div>
                             </a>
                     </li>
-                    
+                
                     <li class="projects-works">
                         <a class="projects-works-link" href="">
                             <div class="projects-overlay">
@@ -385,12 +436,12 @@
                         </a>
                     </li>
                 </ul>
-            </div>
-            </section>
+            </section>      
+        </div>
 
 
 
-                <!--Footer section-->
+            <!--Footer section-->
         
                 <footer>
                     <div class ="container footer">
@@ -405,7 +456,7 @@
                                 <a class="footer-phone" href="tel:+380961111111">+38 096 111 11 11</a>
                             </li>
                         </ul>
-                        </div>
+                    </div>
                     
                         <div class="footer-info">
                             <b class="join">ПРИСОЕДИНЯЙТЕСЬ</b>
@@ -445,20 +496,20 @@
                         </div>  
                     
                     
-                    <div class="subscription ">
-                        <b>Подпишитесь на рассылку</b>
-                            <form action="" class="footer-subscription">
-                                <input type="email" class="footer-email_form" placeholder="E-mail">
-                                    <button type="submit" class="footer-button">Подписаться
-                                <svg width="24px" height="24px">
-                                    <use href="./testSprite.svg#icon-send"></use>
-                                </svg>
-                            </button>
-                        </form>
-                    </div>
+                        <div class="subscription ">
+                            <b class="signup">Подпишитесь на рассылку</b>
+                                <form action="" class="footer-subscription">
+                                    <input type="email" class="footer-email_form" placeholder="E-mail">
+                                        <button type="submit" class="footer-button">Подписаться
+                                    <svg width="24px" height="24px">
+                                        <use href="./testSprite.svg#icon-send"></use>
+                                    </svg>
+                                </button>
+                            </form>
+                        </div>
                 </div>
-                </div>
-                </footer>
+            </footer>
+        
     </main>
     <script src="./js/modal.js"></script>
-    </body>
+</body>
