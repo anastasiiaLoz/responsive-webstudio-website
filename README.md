@@ -1,1 +1,1 @@
-# goit-markup-hw-05
+WebStudio site with responsive design
